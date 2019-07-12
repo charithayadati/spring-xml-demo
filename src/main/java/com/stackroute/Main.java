@@ -22,6 +22,7 @@ public class Main {
         Movie film3 = context.getBean("movie2", Movie.class);
         film3.actorDetails();
         //showing with scope as prototype
+        System.out.println("showing equality of beans using scope as prototype");
         System.out.println(film2==film3);
         Movie film4 = context.getBean("movie3", Movie.class);
         film4.actorDetails();
