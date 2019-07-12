@@ -11,11 +11,6 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
         <property name="gender" value="male"/>
     </bean>
 
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <property name="name" value="Anand"/>
-        <property name="age" value="23"/>
-        <property name="gender" value="male"/>
-    </bean>
 
     <bean id="movie1" class ="com.stackroute.domain.Movie" autowire="byName">
         <property name="actor" ref="actor"/>
