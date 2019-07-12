@@ -10,10 +10,13 @@ public class Main {
     public static void main(String[] args) {
 
        //using Application Context
-       ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie film = context.getBean("movie1", Movie.class);
+        System.out.println("By using autowiring byName  ");
         film.actorDetails();
-        Movie film1 = context.getBean("movie1", Movie.class);
+
+
+       /* Movie film1 = context.getBean("movie1", Movie.class);
         film1.actorDetails();
         //showing the equality of beans
         System.out.println(film==film1);
@@ -27,12 +30,7 @@ public class Main {
         Movie film4 = context.getBean("movie3", Movie.class);
         film4.actorDetails();
         Movie film5 = context.getBean("movie4", Movie.class);
-        film5.actorDetails();
-
-
-
-
-
+        film5.actorDetails();*/
 
     }
 }
