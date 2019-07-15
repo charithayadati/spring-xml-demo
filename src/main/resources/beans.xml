@@ -5,19 +5,7 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="name" value="Abhay"/>
-        <property name="age" value="22"/>
-        <property name="gender" value="male"/>
+
+    <bean id="bean" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
     </bean>
-
-
-    <bean id="movie" class ="com.stackroute.domain.Movie" autowire="byName">
-        <property name="actor" ref="actor"/>
-    </bean>
-    <bean id="movie1" class ="com.stackroute.domain.Movie" autowire="byName">
-        <property name="actor" ref="actor"/>
-    </bean>
-
-
 </beans>
