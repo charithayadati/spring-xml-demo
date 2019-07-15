@@ -12,6 +12,9 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
     </bean>
 
 
+    <bean id="movie" class ="com.stackroute.domain.Movie" autowire="byName">
+        <property name="actor" ref="actor"/>
+    </bean>
     <bean id="movie1" class ="com.stackroute.domain.Movie" autowire="byName">
         <property name="actor" ref="actor"/>
     </bean>
