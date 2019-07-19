@@ -1,6 +1,7 @@
 package com.stackroute.domain;
 
 public class Actor {
+     //Creating setter and getter methods for literals
     private String gender;
 
     public void setGender(String gender) {
