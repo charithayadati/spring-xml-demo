@@ -1,6 +1,8 @@
 package com.stackroute.domain;
 
 public class Actor {
+    
+    //Creating getter and setter methods for literals
     private String gender;
     private int age;
     private String name;
