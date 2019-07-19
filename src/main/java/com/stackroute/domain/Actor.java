@@ -1,6 +1,7 @@
 package com.stackroute.domain;
 
 public class Actor {
+    //creating getter ans setter methods for literals
     public String getName() {
         return name;
     }
