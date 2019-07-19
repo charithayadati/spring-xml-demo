@@ -17,12 +17,12 @@ public class Movie implements ApplicationContextAware,BeanFactoryAware ,BeanName
     public Movie(){
 
     }
-
+    //Passing actor object to the movie constructor
     public Movie(Actor actor){
         this.actor=actor;
     }
 
-
+    
     public BeanFactory getBeanFactory() {
         return beanFactory;
     }
@@ -40,11 +40,12 @@ public class Movie implements ApplicationContextAware,BeanFactoryAware ,BeanName
     public void setActor(Actor actor) {
         this.actor = actor;
     }
-
+    //Creating method to display details
     public void actorDetails(){
         System.out.println(actor.getName()+" is a " +actor.getGender()+" of age: "+actor.getAge());
 
     }
+    //Using ApplicationContext to get the bean
    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
@@ -52,12 +53,12 @@ public class Movie implements ApplicationContextAware,BeanFactoryAware ,BeanName
         return applicationContext;
     }
 
-
+    //Using BeanFactory to get the bean
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         this.beanFactory = beanFactory;
 
     }
-
+    //Using BeanNameAware to get the bean
     public void setBeanName(String s) {
         this.name=s;
     }
