@@ -7,7 +7,7 @@ public class Movie {
         this.actor = actor;
     }
 
-
+    //Creating a method to display the details
     public void actorDetails(){
         System.out.println(actor.getName()+" is a " +actor.getGender()+" of age: "+actor.getAge());
 
