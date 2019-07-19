@@ -23,7 +23,7 @@ public class Main {
         Movie film = context.getBean("movie", Movie.class);
         film.actorDetails();
 
-        //Using XmlBeanFactory
+        //Using XmlBeanFactory to get bean
         Resource resource = new ClassPathResource("beans.xml");
         BeanFactory beanFactory = new XmlBeanFactory(resource);
         Movie movie = beanFactory.getBean("movie", Movie.class);
